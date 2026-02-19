@@ -1,202 +1,268 @@
 <!DOCTYPE html>
-<html class="dark" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Proyectos Especiales - Ricardo Ortiz Orfebre</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#d4af37","primary-hover": "#f3cf55",
-                        "background-dark": "#000000","surface-dark": "#111111", 
-                        "text-muted": "#a1a1aa",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
-<style>::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #000000; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333333; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #d4af37; 
-        }
-        .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 300,
-            'GRAD' 0,
-            'opsz' 24
-        }
-    </style>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Proyectos Especiales - Ricardo Ortiz Orfebre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:ital,wght@0,200..800;1,200..800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"/>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script src="static/js/scripts.js"></script>
+
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body class="bg-background-dark text-white font-display antialiased min-h-screen flex flex-col overflow-x-hidden selection:bg-primary selection:text-background-dark">
 <div class="layout-container flex h-full grow flex-col">
-<header class="sticky top-0 z-50 w-full bg-background-dark/95 border-b border-white/5 backdrop-blur-sm">
-<div class="mx-auto flex h-20 max-w-[1200px] items-center justify-between px-6 lg:px-12">
-<div class="flex items-center gap-3 text-primary">
-<span class="material-symbols-outlined text-3xl">diamond</span>
-<h2 class="text-white text-lg font-bold tracking-tight uppercase hidden sm:block">Ricardo Ortiz <span class="font-light text-primary">Orfebre</span></h2>
-</div>
-<div class="hidden md:flex items-center gap-8">
-<nav class="flex gap-6">
-<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors duration-300" href="#">Inicio</a>
-<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors duration-300" href="#">Colecciones</a>
-<a class="text-sm font-medium text-primary" href="#">Proyectos</a>
-<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors duration-300" href="#">Biografía</a>
-</nav>
-</div>
-<div class="flex items-center gap-3">
-<button class="flex items-center justify-center size-10 rounded-full bg-white/5 hover:bg-primary hover:text-background-dark transition-all duration-300 group border border-white/10 hover:border-primary">
-<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">photo_camera</span>
-</button>
-<button class="flex items-center justify-center size-10 rounded-full bg-white/5 hover:bg-primary hover:text-background-dark transition-all duration-300 group border border-white/10 hover:border-primary">
-<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">public</span>
-</button>
-<button class="md:hidden flex items-center justify-center size-10 text-white">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</header>
-<main class="flex-1 w-full flex justify-center bg-black">
-<div class="flex flex-col w-full max-w-[1200px] px-6 lg:px-12 py-12 lg:py-20 gap-16 lg:gap-24">
-<section class="flex flex-col gap-6 max-w-3xl">
-<div class="flex items-center gap-2 text-primary uppercase tracking-widest text-xs font-bold">
-<div class="w-8 h-[1px] bg-primary"></div>
-<span>Portfolio Corporativo</span>
-</div>
-<h1 class="text-5xl md:text-7xl font-bold leading-[0.95] tracking-tighter text-white">
-                        Proyectos <span class="text-primary italic font-serif font-light">Especiales</span>
-</h1>
-<p class="text-text-muted text-lg md:text-xl font-light leading-relaxed max-w-2xl">
-                        Una selección curada de colaboraciones exclusivas, premios corporativos y piezas de alta joyería diseñadas para instituciones que buscan trascender a través del arte y la materialidad noble.
-                    </p>
-</section>
-<article class="@container group">
-<div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
-<div class="w-full lg:w-3/5 relative aspect-[4/3] lg:aspect-video p-1 border border-primary/30 rounded-sm">
-<div class="w-full h-full overflow-hidden relative">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Abstract copper texture representing Codelco mining" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDX6xa0S-WXgPADsLeEwVP3LhtWo6qJoihNQiWk2ESUxBg5bCNAt3d4XjQmF_rjsDzEYin-d4YDN9lMj8saB_JFs90HI4NxeFsw4sHx9GkQcRFVvFSGj1TkPwgSbSog9MIwsxHYaEORDIyXwG_apjXjwyDVyKteMzBWUlh1L7LMa04q684SCwDIqdstEYWF-WrBI2BB7j2f-TzterG1M-8jQXuuRzXv0RnXkKGBYK3CWjxMGBpIEU3YEtoY68jzs85uou3iKqyRHi8");'></div>
-<div class="absolute inset-0 bg-black/10"></div>
-<div class="absolute bottom-6 left-6 flex items-center gap-2 z-10">
-<span class="bg-black/80 text-primary px-3 py-1 text-xs font-bold uppercase tracking-wider border border-primary/50">Cobre &amp; Oro</span>
-</div>
-</div>
-</div>
-<div class="w-full lg:w-2/5 flex flex-col gap-6">
-<div class="flex flex-col gap-3">
-<h2 class="text-3xl font-bold tracking-tight text-white group-hover:text-primary transition-colors duration-500">Colaboración CODELCO Chile</h2>
-<div class="w-16 h-[1px] bg-primary"></div>
-</div>
-<p class="text-gray-300 text-base leading-relaxed font-light">
-                                Diseño y confección de galardones corporativos fusionando la identidad nacional con la artesanía de lujo. Cada pieza celebra la excelencia de la minería chilena utilizando cobre de alta pureza y detalles en oro de 18 kilates.
-                            </p>
-<ul class="flex flex-col gap-3 text-gray-400 text-sm">
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Diseño Exclusivo</li>
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Materiales Nobles</li>
-</ul>
-<button class="mt-4 flex items-center justify-between w-full max-w-[200px] h-12 px-6 bg-transparent border border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300 text-sm font-bold uppercase tracking-wider group/btn">
-<span>Ver Galería</span>
-<span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</div>
-</div>
-</article>
-<article class="@container group">
-<div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-16 items-center">
-<div class="w-full lg:w-3/5 relative aspect-[4/3] lg:aspect-video p-1 border border-primary/30 rounded-sm">
-<div class="w-full h-full overflow-hidden relative">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Luxury gold trophy details for Casino Enjoy" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeqbGtZIV-6OLMqjcBGQ1Dng3Dig1dUyU6Eo8osatdOav6eo-pm_2sF-xX1-tnpCDJrqFjmo4NwPijJVj3_QDk-m3HZfwOJKFcJ91eAmc_R_B029ve9X3jaLlFtCklFnq4gutAbVIIEOtq61L7e1E1fDBkcvBL2cxhUappGuIwnAW5NlUmt3NGH35udY8aSSlvVB9KSayWtDgLWoRYnXb65HbNtOXAvZU67WStnTaMxWD6y-VDVKhMnHjAUkroMskFxmU4aLnyImc");'></div>
-<div class="absolute inset-0 bg-black/10"></div>
-<div class="absolute bottom-6 left-6 flex items-center gap-2 z-10">
-<span class="bg-black/80 text-primary px-3 py-1 text-xs font-bold uppercase tracking-wider border border-primary/50">Trofeos High-End</span>
-</div>
-</div>
-</div>
-<div class="w-full lg:w-2/5 flex flex-col gap-6 lg:items-end lg:text-right">
-<div class="flex flex-col gap-3 lg:items-end">
-<h2 class="text-3xl font-bold tracking-tight text-white group-hover:text-primary transition-colors duration-500">Casino Enjoy</h2>
-<div class="w-16 h-[1px] bg-primary"></div>
-</div>
-<p class="text-gray-300 text-base leading-relaxed font-light">
-                                Trofeos de alta gama para torneos internacionales de poker. Piezas únicas que capturan la elegancia y el prestigio del juego, utilizando plata esterlina, baños de oro y bases de maderas nativas.
-                            </p>
-<ul class="flex flex-col gap-3 text-gray-400 text-sm lg:items-end">
-<li class="flex items-center gap-3 lg:flex-row-reverse"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Edición Limitada</li>
-<li class="flex items-center gap-3 lg:flex-row-reverse"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Grabado Láser</li>
-</ul>
-<button class="mt-4 flex items-center justify-between w-full max-w-[200px] h-12 px-6 bg-transparent border border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300 text-sm font-bold uppercase tracking-wider group/btn">
-<span>Ver Proyecto</span>
-<span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</div>
-</div>
-</article>
-<section class="space-y-10 pt-10">
-<div class="flex items-end justify-between border-b border-white/10 pb-6">
-<h3 class="text-2xl font-bold text-white tracking-tight">El Arte del Detalle</h3>
-<a class="text-sm text-primary hover:text-white transition-colors flex items-center gap-2 uppercase tracking-wide font-medium" href="#">
-                            Explorar Taller <span class="material-symbols-outlined text-sm">arrow_outward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="group cursor-pointer">
-<div class="p-0.5 border border-white/10 group-hover:border-primary/50 transition-colors duration-500 mb-5">
-<div class="overflow-hidden aspect-[3/4] relative bg-neutral-900">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" data-alt="Close up of goldsmith engraving details on metal" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIxL7vg8attGez-lhw9lp9j3VLv04bt8qlSD6_ZdmUYHOn37BDMZrqtlH9-0w9xuJY27Txvg6jGkNHxLN9uBo-yFUcztFqAepRSyNpF3Up5jhh8d_h0NqT8GP6oHTXkeWTE8e_nPYxYhquyp9wx-tyIntv-gFl55CEYLXXgH2xJBYZpFJoab24S73ek_6t9aFPhq1vg8_cYmd5C11nqFi6s15qcDzdvRf_Frk8ayr_1OgJylr1ctdQrJhJcb-q9gyxB3Kt25_7iYc");'></div>
-</div>
-</div>
-<h4 class="text-white text-lg font-bold mb-2 group-hover:text-primary transition-colors">Detalle de Grabado</h4>
-<p class="text-gray-400 text-sm font-light">Precisión milimétrica en logotipos corporativos y firmas.</p>
-</div>
-<div class="group cursor-pointer">
-<div class="p-0.5 border border-white/10 group-hover:border-primary/50 transition-colors duration-500 mb-5">
-<div class="overflow-hidden aspect-[3/4] relative bg-neutral-900">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" data-alt="Molten gold being poured into a cast" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3324lCg_I6r9OqEbYjUG7Pxc--e_knqyDm-grX_PAf1XL7BemOuuED6WghwZw9xRJutcfYqHYj8TrYnNVHkqGyZekQfcKnxDyF8bFN7GWESEz3x4_GlJX1DWaDF38q54BMRH2o8-AjL9BlE2v8w3uJpMpTZWMR47XizbnGnUATy8bxtFwFGeEbyC8AxjyQaXgRakMqu8qDs1nZrP7qJizO_zRKcQRE7YQqGMv3UsAtEdrJvf2Y8gpIxyYWvc1MYh5b55cu9E-p98");'></div>
-</div>
-</div>
-<h4 class="text-white text-lg font-bold mb-2 group-hover:text-primary transition-colors">Fundición de Oro</h4>
-<p class="text-gray-400 text-sm font-light">Proceso artesanal de fundición para piezas sólidas y duraderas.</p>
-</div>
-<div class="group cursor-pointer">
-<div class="p-0.5 border border-white/10 group-hover:border-primary/50 transition-colors duration-500 mb-5">
-<div class="overflow-hidden aspect-[3/4] relative bg-neutral-900">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" data-alt="Final assembly and polishing of jewelry pieces" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPV20_dI39JeAdogTLMTGZgwWZBEw1Pnssgzj3NGBAWRvQ-WrNrRSRF1Uev6vBIIYrftKf5YKQDDwDb7mitnaeFvRF2W3LSJQmzyNemNMlgmKA4pHw9uwUx8RFUlKgk46VUrblZUwVj26nRYR1awFUXYuCzwa605LYJUYszbHuFDcUTDKCXP4xc2l4OWaUQBPrpbfQj8z5FOW4YSoiHo4yj2LGralIHyLZ7-Ch1DvKApUD1ucQaNsMmxFMwqdR9Ac6D_Ej4FhEydo");'></div>
-</div>
-</div>
-<h4 class="text-white text-lg font-bold mb-2 group-hover:text-primary transition-colors">Montaje y Acabado</h4>
-<p class="text-gray-400 text-sm font-light">Ensamblaje final y pulido espejo de piezas conmemorativas.</p>
-</div>
-</div>
-</section>
-<div class="mt-16 py-16 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-dark px-8 -mx-6 lg:-mx-12">
-<div class="text-center md:text-left">
-<p class="text-primary text-sm mb-3 uppercase tracking-widest font-bold">¿Tiene un proyecto especial en mente?</p>
-<h3 class="text-3xl text-white font-bold tracking-tight">Creemos algo extraordinario.</h3>
-</div>
-<button class="bg-primary text-background-dark px-10 py-4 font-bold hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-wider text-sm border border-primary">
-                        Contactar Estudio
-                    </button>
-</div>
-</div>
-</main>
-</div>
 
-</body></html>
+    <header class="sticky top-0 z-50 w-full bg-black border-b border-white/10 transition-all duration-300">
+
+        <div class="flex items-center justify-between px-6 lg:px-10 py-4 lg:py-6">
+
+            <div class="flex items-center gap-4">
+                <div class="text-primary">
+                    <span class="material-symbols-outlined !text-[32px]">auto_awesome</span>
+                </div>
+                <h2 class="text-white text-xl font-bold leading-tight tracking-wider uppercase">
+                    Ricardo Ortiz <span class="text-primary font-serif italic normal-case font-medium">Orfebre</span>
+                </h2>
+            </div>
+
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+                <nav class="flex items-center gap-9">
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="index.html">Inicio</a>
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="galeria.html">Galería</a>
+                    <a class="text-primary text-sm font-bold uppercase tracking-wide border-b border-primary pb-1" href="proyectos.html">Proyectos</a>
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="acerca.html">Sobre Mi</a>
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden text-primary p-2 focus:outline-none hover:bg-white/5 rounded-full transition-colors">
+                <span id="menu-icon" class="material-symbols-outlined text-3xl transition-transform duration-300">menu</span>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-surface-dark border-t border-white/10 px-6 py-6 shadow-2xl">
+            <nav class="flex flex-col gap-6">
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="index.html">Inicio</a>
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="galeria.html">Galería</a>
+                <a class="text-primary text-sm font-bold uppercase tracking-wide border-b border-primary pb-1" href="proyectos.html">Proyectos</a>
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="acerca.html">Sobre Mi</a>
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-1 w-full flex justify-center bg-black">
+        <div class="flex flex-col w-full max-w-[1200px] px-6 lg:px-12 py-12 lg:py-20 gap-16 lg:gap-24">
+            <section class="flex flex-col gap-6 max-w-3xl">
+                <div class="flex items-center gap-2 text-primary uppercase tracking-widest text-xs font-bold">
+                    <div class="w-8 h-[1px] bg-primary"></div>
+                    <span>Portfolio Corporativo</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-[0.95] tracking-tighter text-white">
+                    Proyectos <span class="text-primary italic font-serif font-light">Especiales</span>
+                </h1>
+                <p class="text-text-muted text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                    Una selección curada de colaboraciones exclusivas, premios corporativos y piezas de alta joyería
+                    diseñadas para instituciones que buscan trascender a través del arte y la materialidad noble.
+                </p>
+            </section>
+
+            <article class="@container group">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+                    <div class="w-full lg:w-3/5 relative aspect-[4/3] lg:aspect-video p-1 border border-primary/30 rounded-sm">
+                        <div class="w-full h-full overflow-hidden relative">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 bg-proyecto-codelco"
+                                 data-alt="Abstract copper texture representing Codelco mining"></div>
+                            <div class="absolute inset-0 bg-black/10"></div>
+                            <div class="absolute bottom-6 left-6 flex items-center gap-2 z-10">
+                                <span class="bg-black/80 text-primary px-3 py-1 text-xs font-bold uppercase tracking-wider border border-primary/50">Cobre & Oro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/5 flex flex-col gap-6">
+                        <div class="flex flex-col gap-3">
+                            <h2 class="text-3xl font-bold tracking-tight text-white group-hover:text-primary transition-colors duration-500">
+                                Colaboración CODELCO Chile</h2>
+                            <div class="w-16 h-[1px] bg-primary"></div>
+                        </div>
+                        <p class="text-gray-300 text-base leading-relaxed font-light">
+                            Diseño y confección de galardones corporativos fusionando la identidad nacional con la
+                            artesanía de lujo. Cada pieza celebra la excelencia de la minería chilena utilizando cobre
+                            de alta pureza y detalles en oro de 18 kilates.
+                        </p>
+                        <ul class="flex flex-col gap-3 text-gray-400 text-sm">
+                            <li class="flex items-center gap-3"><span
+                                    class="w-1.5 h-1.5 bg-primary rounded-full"></span> Diseño Exclusivo
+                            </li>
+                            <li class="flex items-center gap-3"><span
+                                    class="w-1.5 h-1.5 bg-primary rounded-full"></span> Materiales Nobles
+                            </li>
+                        </ul>
+                        <button class="mt-4 flex items-center justify-between w-full max-w-[200px] h-12 px-6 bg-transparent border border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300 text-sm font-bold uppercase tracking-wider group/btn">
+                            <span>Ver Galería</span>
+                            <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="@container group">
+                <div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-16 items-center">
+                    <div class="w-full lg:w-3/5 relative aspect-[4/3] lg:aspect-video p-1 border border-primary/30 rounded-sm">
+                        <div class="w-full h-full overflow-hidden relative">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 bg-proyecto-casino"
+                                 data-alt="Luxury gold trophy details for Casino Enjoy"></div>
+                            <div class="absolute inset-0 bg-black/10"></div>
+                            <div class="absolute bottom-6 left-6 flex items-center gap-2 z-10">
+                                <span class="bg-black/80 text-primary px-3 py-1 text-xs font-bold uppercase tracking-wider border border-primary/50">Trofeos High-End</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/5 flex flex-col gap-6 lg:items-end lg:text-right">
+                        <div class="flex flex-col gap-3 lg:items-end">
+                            <h2 class="text-3xl font-bold tracking-tight text-white group-hover:text-primary transition-colors duration-500">
+                                Casino Enjoy</h2>
+                            <div class="w-16 h-[1px] bg-primary"></div>
+                        </div>
+                        <p class="text-gray-300 text-base leading-relaxed font-light">
+                            Trofeos de alta gama para torneos internacionales de poker. Piezas únicas que capturan la
+                            elegancia y el prestigio del juego, utilizando plata esterlina, baños de oro y bases de
+                            maderas nativas.
+                        </p>
+                        <ul class="flex flex-col gap-3 text-gray-400 text-sm lg:items-end">
+                            <li class="flex items-center gap-3 lg:flex-row-reverse"><span
+                                    class="w-1.5 h-1.5 bg-primary rounded-full"></span> Edición Limitada
+                            </li>
+                            <li class="flex items-center gap-3 lg:flex-row-reverse"><span
+                                    class="w-1.5 h-1.5 bg-primary rounded-full"></span> Grabado Láser
+                            </li>
+                        </ul>
+                        <button class="mt-4 flex items-center justify-between w-full max-w-[200px] h-12 px-6 bg-transparent border border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300 text-sm font-bold uppercase tracking-wider group/btn">
+                            <span>Ver Proyecto</span>
+                            <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <section class="space-y-10 pt-10">
+                <div class="flex items-end justify-between border-b border-white/10 pb-6">
+                    <h3 class="text-2xl font-bold text-white tracking-tight">El Arte del Detalle</h3>
+                    <a class="text-sm text-primary hover:text-white transition-colors flex items-center gap-2 uppercase tracking-wide font-medium"
+                       href="#">
+                        Explorar Taller <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="p-0.5 border border-white/10 group-hover:border-primary/50 transition-colors duration-500 mb-5">
+                            <div class="overflow-hidden aspect-[3/4] relative bg-neutral-900">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 bg-proyecto-detalle-1"
+                                     data-alt="Close up of goldsmith engraving details on metal"></div>
+                            </div>
+                        </div>
+                        <h4 class="text-white text-lg font-bold mb-2 group-hover:text-primary transition-colors">Detalle
+                            de Grabado</h4>
+                        <p class="text-gray-400 text-sm font-light">Precisión milimétrica en logotipos corporativos y
+                            firmas.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="p-0.5 border border-white/10 group-hover:border-primary/50 transition-colors duration-500 mb-5">
+                            <div class="overflow-hidden aspect-[3/4] relative bg-neutral-900">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 bg-proyecto-detalle-2"
+                                     data-alt="Molten gold being poured into a cast"></div>
+                            </div>
+                        </div>
+                        <h4 class="text-white text-lg font-bold mb-2 group-hover:text-primary transition-colors">
+                            Fundición de Oro</h4>
+                        <p class="text-gray-400 text-sm font-light">Proceso artesanal de fundición para piezas sólidas y
+                            duraderas.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="p-0.5 border border-white/10 group-hover:border-primary/50 transition-colors duration-500 mb-5">
+                            <div class="overflow-hidden aspect-[3/4] relative bg-neutral-900">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 bg-proyecto-detalle-3"
+                                     data-alt="Final assembly and polishing of jewelry pieces"></div>
+                            </div>
+                        </div>
+                        <h4 class="text-white text-lg font-bold mb-2 group-hover:text-primary transition-colors">Montaje
+                            y Acabado</h4>
+                        <p class="text-gray-400 text-sm font-light">Ensamblaje final y pulido espejo de piezas
+                            conmemorativas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mt-16 py-16 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-dark px-8 -mx-6 lg:-mx-12">
+                <div class="text-center md:text-left">
+                    <p class="text-primary text-sm mb-3 uppercase tracking-widest font-bold">¿Tiene un proyecto especial
+                        en mente?</p>
+                    <h3 class="text-3xl text-white font-bold tracking-tight">Creemos algo extraordinario.</h3>
+                </div>
+                <button class="bg-primary text-background-dark px-10 py-4 font-bold hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-wider text-sm border border-primary">
+                    Contactar Estudio
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black border-t border-white/10 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 mb-12 text-center md:text-left">
+                <div class="max-w-xs">
+                    <div class="flex items-center justify-center md:justify-start gap-2 text-primary mb-4">
+                        <div>
+                            <span class="material-symbols-outlined">auto_awesome</span>
+                        </div>
+                        <span class="text-lg font-bold tracking-wider uppercase">Ricardo Ortiz</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">
+                        Orfebrería de autor. Diseño y confección de joyas exclusivas con materiales de la más alta
+                        calidad.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-white font-bold uppercase tracking-wider text-xs">Navegación</h4>
+                    <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light" href="index.html">Inicio</a>
+                    <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light"
+                       href="galeria.html">Galería</a>
+                    <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light"
+                       href="proyectos.html">Proyectos</a>
+                    <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light"
+                       href="contacto.html">Contacto</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-white font-bold uppercase tracking-wider text-xs">Contacto</h4>
+                    <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light"
+                       href="mailto:info@ricardoortiz.com">info@ricardoortiz.com</a>
+                    <p class="text-gray-400 text-sm font-light">+34 912 345 678</p>
+                    <div class="flex gap-4 justify-center md:justify-start mt-2">
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+                        </a>
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined text-[20px]">public</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 text-xs">© 2023 Ricardo Ortiz Orfebre. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a class="text-gray-600 hover:text-gray-400 text-xs" href="#">Aviso Legal</a>
+                    <a class="text-gray-600 hover:text-gray-400 text-xs" href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

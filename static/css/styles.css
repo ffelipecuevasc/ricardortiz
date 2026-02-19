@@ -1,0 +1,75 @@
+/* =========================================
+   styles.css - Ricardo Ortiz Orfebre
+   ========================================= */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Ajustes de Scrollbar (Proyectos) --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e7c100; /* Actualizado al nuevo color primario */
+}
+
+/* --- Iconografía --- */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* --- Utilidades Gráficas Especiales (Acerca de) --- */
+.gold-gradient-text {
+    /* Gradiente actualizado para usar el primary de index.html */
+    background: linear-gradient(to right, #e7c100, #f2d06b, #e7c100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sketch-overlay {
+    background-image: radial-gradient(#e7c100 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.05;
+}
+
+.text-glow {
+    /* Sombra actualizada al RGB de #e7c100 (231, 193, 0) */
+    text-shadow: 0 0 20px rgba(231, 193, 0, 0.3);
+}
+
+/* =========================================
+   Imágenes de Fondo (Migradas desde HTML)
+   ========================================= */
+
+/* Acerca de */
+.bg-acerca-retrato { background-image: url('../img/acerca-retrato.jpg'); }
+.bg-acerca-taller { background-image: url('../img/acerca-taller.jpg'); }
+
+/* Galería */
+.bg-galeria-perfil { background-image: url('../img/galeria-perfil.jpg'); }
+.bg-galeria-anillos { background-image: url('../img/galeria-anillos.jpg'); }
+.bg-galeria-aretes { background-image: url('../img/galeria-aretes.jpg'); }
+.bg-galeria-brazaletes { background-image: url('../img/galeria-brazaletes.jpg'); }
+.bg-galeria-collares { background-image: url('../img/galeria-collares.jpg'); }
+.bg-galeria-premios { background-image: url('../img/galeria-premios.jpg'); }
+
+/* Index */
+.bg-index-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url('../img/index-hero.jpg');
+}
+
+/* Proyectos */
+.bg-proyecto-codelco { background-image: url('../img/proyecto-codelco.jpg'); }
+.bg-proyecto-casino { background-image: url('../img/proyecto-casino.jpg'); }
+.bg-proyecto-detalle-1 { background-image: url('../img/proyecto-detalle-1.jpg'); }
+.bg-proyecto-detalle-2 { background-image: url('../img/proyecto-detalle-2.jpg'); }
+.bg-proyecto-detalle-3 { background-image: url('../img/proyecto-detalle-3.jpg'); }

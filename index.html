@@ -4,74 +4,68 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Ricardo Ortiz Orfebre</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:ital,wght@0,200..800;1,200..800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-          rel="stylesheet"/>
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#e7c100",
-                        "background-light": "#f8f8f5",
-                        "background-dark": "#000000",
-                        "surface-dark": "#111111",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+    <script src="static/js/scripts.js"></script>
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
-<body class="bg-background-dark text-slate-100 overflow-x-hidden">
+<body class="bg-background-dark text-slate-100 overflow-x-hidden font-display">
 <div class="relative flex min-h-screen w-full flex-col group/design-root">
-    <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap bg-black border-b border-white/10 px-10 py-6 transition-all duration-300">
-        <div class="flex items-center gap-4 text-primary">
-            <div>
-                <span class="material-symbols-outlined !text-[32px]">diamond</span>
+    <header class="sticky top-0 z-50 w-full bg-black border-b border-white/10 transition-all duration-300">
+
+        <div class="flex items-center justify-between px-6 lg:px-10 py-4 lg:py-6">
+
+            <div class="flex items-center gap-4">
+                <div class="text-primary">
+                    <span class="material-symbols-outlined !text-[32px]">auto_awesome</span>
+                </div>
+                <h2 class="text-white text-xl font-bold leading-tight tracking-wider uppercase">
+                    Ricardo Ortiz <span class="text-primary font-serif italic normal-case font-medium">Orfebre</span>
+                </h2>
             </div>
-            <h2 class="text-primary text-xl font-bold leading-tight tracking-wider uppercase">Ricardo Ortiz</h2>
+
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+                <nav class="flex items-center gap-9">
+                    <a class="text-primary text-sm font-bold uppercase tracking-wide border-b border-primary pb-1" href="index.html">Inicio</a>
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="galeria.html">Galería</a>
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="proyectos.html">Proyectos</a>
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="acerca.html">Sobre Mi</a>
+                    <a class="text-white hover:text-primary transition-colors text-sm font-medium uppercase tracking-wide border-b border-transparent pb-1" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden text-primary p-2 focus:outline-none hover:bg-white/5 rounded-full transition-colors">
+                <span id="menu-icon" class="material-symbols-outlined text-3xl transition-transform duration-300">menu</span>
+            </button>
         </div>
-        <div class="flex flex-1 justify-end gap-8 hidden md:flex">
-            <nav class="flex items-center gap-9">
-                <a class="text-primary/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wide"
-                   href="#">Inicio</a>
-                <a class="text-primary/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wide"
-                   href="#">Galería</a>
-                <a class="text-primary/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wide"
-                   href="#">Proyectos</a>
-                <a class="text-primary/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wide"
-                   href="#">Sobre Mi</a>
-                <a class="text-primary/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wide"
-                   href="#">Contacto</a>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-surface-dark border-t border-white/10 px-6 py-6 shadow-2xl">
+            <nav class="flex flex-col gap-6">
+                <a class="text-primary text-sm font-bold uppercase tracking-wide border-b border-primary pb-1" href="index.html">Inicio</a>
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="galeria.html">Galería</a>
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="proyectos.html">Proyectos</a>
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="acerca.html">Sobre Mi</a>
+                <a class="text-white hover:text-primary transition-colors text-base font-bold uppercase tracking-wide" href="contacto.html">Contacto</a>
             </nav>
         </div>
-        <button class="md:hidden text-primary">
-            <span class="material-symbols-outlined">menu</span>
-        </button>
     </header>
     <main class="flex-grow bg-black">
         <section class="relative min-h-[600px] md:min-h-[800px] flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                 data-alt="Close up photography of elegant gold jewelry ring"
-                 style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCittgBiZfhLoJ3etVJ6sxFqVTzW1AEDcD2VEOyx7i-6fDvWHUlGkybZA9g7d_AuRKnVFMY-fVX45h-9xEJ7uw2qRWskRaXH9f1cbHG5aJ7wa7r85sifi2LlFw5OGc43GCA1ZQbcgNNRJ2gpPf4mACCz7y-hEAr2HbBWrj67YgLBPhVSE23c1HbGSSCye_yi9rmfZ_X0U1VH5TLhGLB2DQbjPDOLzlNQkiPGoINfEA7ug22rZ-p6gUvPdITspfcZHnj055RuQcs5C4");'>
+            <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-index-hero"
+                 data-alt="Close up photography of elegant gold jewelry ring">
             </div>
             <div class="relative z-10 container mx-auto px-4 flex flex-col items-center text-center gap-8">
                 <div class="space-y-4 max-w-4xl animate-fade-in-up">
                     <span class="text-primary text-sm md:text-base uppercase tracking-[0.2em] font-medium border-b border-primary pb-1">Alta Orfebrería</span>
                     <h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-light tracking-tight mt-4">
-                        <span class="font-bold text-primary">Orfebrería</span><br/>en Cobre & Plata.
+                        <span class="font-bold text-primary font-serif">Orfebrería</span><br/>en Cobre & Plata.
                     </h1>
                     <p class="text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
                         Creaciones exclusivas donde la tradición artesanal se encuentra con el diseño contemporáneo.
@@ -105,7 +99,7 @@
                             porta y perdurar a través de generaciones como un legado de belleza y distinción.
                         </p>
                         <a class="inline-flex items-center text-primary border-b border-primary pb-1 hover:text-white hover:border-white transition-colors uppercase text-sm tracking-widest font-bold mt-4"
-                           href="#">
+                           href="acerca.html">
                             Conoce al Artista
                         </a>
                     </div>
@@ -114,7 +108,7 @@
                             <img alt="Ricardo Ortiz working on a jewelry piece"
                                  class="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                                  data-alt="Portrait of a craftsman working with jewelry tools"
-                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3fRfm3mUaPMJN3NeNvR05mx4oHBvGg2VSRkaq2pwNX6fvsWDhWKBDyaFeByfOxEyQuMfZXAkRxfPGj4ZUwp9quUpzQS_lIhN--xc4cllOk0PKLNKlE2nFr6Zx9Vi0XT_xuUb5k6lF3neB3Wyy7BBtc4YWwSA3K490TtdA4k8y84TJeQTE3OYZNy5PIKT6gSEv7H1IIobzAJ3zchk3kgjCzWzP7fw-_lkcIIY8TOaPa4G7cs7YATtiUSTHYz2VAOfkaynXSfnxBsY"/>
+                                 src="static/img/artesano.jpg"/>
                             <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
                                 <p class="text-white font-serif italic text-xl">"La perfección está en los detalles"</p>
                             </div>
@@ -168,17 +162,17 @@
                         <p class="text-gray-400 font-light">Descubre mis últimas creaciones</p>
                     </div>
                     <a class="hidden md:flex items-center text-primary hover:text-white transition-colors text-sm font-bold uppercase tracking-wider"
-                       href="#">
+                       href="galeria.html">
                         Ver Galería Completa
                         <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
                     </a>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <a class="group relative aspect-square overflow-hidden rounded-sm bg-surface-dark" href="#">
-                        <img alt="Gold ring with diamond"
+                        <img alt="Anillo de Cobre y Plata y Piedra Volcánica"
                              class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                              data-alt="Close up of a luxury diamond ring on dark background"
-                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdmCo1Et4MTWYsm28ytzW_qR2IIfmUfww2mXCqBQiGbBYRY8GGHCQFaqKmaTFIPevaCuSh4LcrlDjLhAJlKGJ4hoJNZ2euGegx3RAsUlZsxFasSJqS3zDwniiAARY5ewkj2jsIgRUMXKPPU41njDwKlXgU0kQ7V7bZnwdu9yvwIsygY-DcwOo53ZN-xLLRMoofHOAs8RtRHIO3q_DtsTzIpZ4Hmk742IGIzzzr6_Qk7dv6pGSg-EntuDyShjY30Fs-CW3y3O0o6NY"/>
+                             src="static/img/anillo.jpg"/>
                         <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="text-primary font-medium uppercase tracking-widest border border-primary px-6 py-3 hover:bg-primary hover:text-black transition-colors">Ver Detalle</span>
                         </div>
@@ -187,8 +181,7 @@
                        href="#">
                         <img alt="Gold necklace"
                              class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-100"
-                             data-alt="Elegant gold necklace on a model"
-                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfrqtGvw2EmFi4PkmoimezFq2a8QMqaMbVhCWCL2z5TqD_n64gd8Fu2fnLntRA8kT3IiGKQwtWAobtNNHbXPwJrkFd2wZPdGhTFXIOAJD1E9eTEJi-6As0yySw8J6vvDek8HmglvhYoZftDaeHCu8sTzWdxwXY84zHpyWJOnSdyVjuYVOVHD4cK2Pszx4WxcHJgQg190q-Bbvwelb2liEJ1uzmxuUnVJL2OLG6Kq5vPL1i6KSKadDm2yGqfXpqEonCXYk3YfjFhZQ"/>
+                             data-alt="Elegant gold necklace on a model" src="static/img/collar.jpg"/>
                         <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="text-primary font-medium uppercase tracking-widest border border-primary px-6 py-3 hover:bg-primary hover:text-black transition-colors">Ver Detalle</span>
                         </div>
@@ -196,8 +189,7 @@
                     <a class="group relative aspect-square overflow-hidden rounded-sm bg-surface-dark" href="#">
                         <img alt="Earrings detail"
                              class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-100"
-                             data-alt="Pair of golden earrings with precious stones"
-                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY5kNO4-hYIzDpSzYgoA91vgrBfcKVoikZOmdHFi3VtDYWRt2Oml50X4dA30gEPn004lsmLKFFQPakTXuanP2jCCrzR18zbLxgS8tbJ4qfY9Fu-uNdyALpHoGxRfI0pIgsmCUU2RU92L0mwR4iZb2SQyrO2O6oWQbU_f1OTBOilc3t14c5OJLOl_8Bd20p8_r7czTfUNH6E9cV7-S9HmgKNIpRU3zvtshdQLVKXkIqYZNOh0bES5KeiP88m6w9-q5Xy8Y1csg-_dA"/>
+                             data-alt="Pair of golden earrings with precious stones" src="static/img/aretes.jpg"/>
                         <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="text-primary font-medium uppercase tracking-widest border border-primary px-6 py-3 hover:bg-primary hover:text-black transition-colors">Ver Detalle</span>
                         </div>
@@ -205,7 +197,7 @@
                 </div>
                 <div class="mt-8 text-center md:hidden">
                     <a class="inline-flex items-center text-primary hover:text-white transition-colors text-sm font-bold uppercase tracking-wider"
-                       href="#">
+                       href="galeria.html">
                         Ver Galería Completa
                         <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
                     </a>
@@ -219,7 +211,7 @@
                 <div class="max-w-xs">
                     <div class="flex items-center justify-center md:justify-start gap-2 text-primary mb-4">
                         <div>
-                            <span class="material-symbols-outlined">diamond</span>
+                            <span class="material-symbols-outlined">auto_awesome</span>
                         </div>
                         <span class="text-lg font-bold tracking-wider uppercase">Ricardo Ortiz</span>
                     </div>
@@ -230,13 +222,13 @@
                 </div>
                 <div class="flex flex-col gap-4">
                     <h4 class="text-white font-bold uppercase tracking-wider text-xs">Navegación</h4>
-                    <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light" href="#">Inicio</a>
+                    <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light" href="index.html">Inicio</a>
                     <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light"
-                       href="#">Galería</a>
+                       href="galeria.html">Galería</a>
                     <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light"
-                       href="#">Proyectos</a>
+                       href="proyectos.html">Proyectos</a>
                     <a class="text-gray-400 hover:text-primary transition-colors text-sm font-light"
-                       href="#">Contacto</a>
+                       href="contacto.html">Contacto</a>
                 </div>
                 <div class="flex flex-col gap-4">
                     <h4 class="text-white font-bold uppercase tracking-wider text-xs">Contacto</h4>
@@ -263,6 +255,5 @@
         </div>
     </footer>
 </div>
-
 </body>
 </html>
